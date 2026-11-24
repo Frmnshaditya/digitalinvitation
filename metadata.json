@@ -1,0 +1,8 @@
+{
+  "name": "digitalinvitation — Jasa Undangan Pernikahan Digital",
+  "description": "Jasa pembuatan undangan pernikahan digital elegan, romantis, dan personal dengan pilihan tema modern hingga adat Nusantara.",
+  "requestFramePermissions": [],
+  "majorCapabilities": [
+    "MAJOR_CAPABILITY_SERVER_SIDE_GEMINI_API"
+  ]
+}
