@@ -76,10 +76,10 @@ export function HeroSection() {
               <div className="relative w-full h-[380px] sm:h-[460px] lg:h-full lg:min-h-[500px] overflow-hidden rounded-md bg-[#F5F5F5]">
                 <EditorialImage
                   src={HERO_IMAGE}
-                  alt="Pasangan pengantin dalam balutan busana ivory elegan di taman bernuansa romantis"
+                  alt="Pasangan pengantin dalam balutan busana pernikahan adat bernuansa elegan dan romantis"
                   fallbackTitle="Undangan Pernikahan Digital"
                   priority
-                  className="w-full h-full object-cover object-top grayscale-[18%] contrast-[1.03]"
+                  className="w-full h-full object-cover object-top"
                 />
               </div>
             </div>

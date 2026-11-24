@@ -28,14 +28,15 @@ export interface PortfolioItem {
   id: string;
   title: string;
   category:
-    | 'Contoh Basic Invitation'
-    | 'Modern Minimalis'
-    | 'Adat Jawa'
-    | 'Adat Sunda'
-    | 'Adat Minang'
-    | 'Elegant Luxury'
-    | 'Floral Romantic';
-  filterGroup: 'Contoh Basic Invitation' | 'Modern Minimalis' | 'Adat Nusantara' | 'Luxury & Floral';
+    | 'Basic Invitation'
+    | 'Standard Invitation'
+    | 'Premium Invitation'
+    | 'Exclusive Invitation';
+  filterGroup:
+    | 'Basic Invitation'
+    | 'Standard Invitation'
+    | 'Premium Invitation'
+    | 'Exclusive Invitation';
   description: string;
   image: string;
   imagePosition?: string;
@@ -77,7 +78,7 @@ export const NAV_ITEMS: NavItem[] = [
   { label: 'Kontak', href: '#kontak' },
 ];
 
-export const HERO_IMAGE = '/src/assets/images/hero_bride_groom_1795512304440.jpg';
+export const HERO_IMAGE = '/assets/aistudio/images__11__c500f213.jpg';
 export const ABOUT_IMAGE = '/src/assets/images/about_editorial_craft_1795512305408.jpg';
 
 export const ABOUT_ADVANTAGES: { title: string; detail: string }[] = [
@@ -113,7 +114,7 @@ export const SERVICES_LIST: ServiceItem[] = [
     number: '01',
     title: 'Basic Invitation',
     summary: 'Undangan sederhana dan informatif.',
-    highlight: 'Domain .my.id · Pilihan Tema & Adat',
+    highlight: 'Domain .biz.id · Pilihan Tema & Adat',
     packageId: 'basic',
   },
   {
@@ -148,7 +149,7 @@ export const PRICING_PACKAGES: PricingPackage[] = [
     name: 'BASIC INVITATION',
     price: 'Rp50.000',
     description: 'Undangan sederhana, praktis, dan tetap elegan.',
-    domainNote: 'Domain .my.id',
+    domainNote: 'Domain .biz.id',
     benefits: [
       'Informasi acara pernikahan',
       'Nama kedua mempelai',
@@ -156,7 +157,7 @@ export const PRICING_PACKAGES: PricingPackage[] = [
       'Integrasi Google Maps',
       'Countdown pernikahan',
       'Link undangan yang dapat dibagikan',
-      'Website menggunakan domain .my.id',
+      'Website menggunakan domain .biz.id',
       'Template desain yang telah disediakan',
       'Pilihan tema atau adat pernikahan seperti Jawa, Sunda, Minang, Modern, dan lainnya',
       'Template disesuaikan dengan tema pilihan pelanggan',
@@ -237,13 +238,13 @@ export const PORTFOLIO_ITEMS: PortfolioItem[] = [
   {
     id: 'contoh-basic-invitation',
     title: 'Naufal & Amanda — Basic Invitation',
-    category: 'Contoh Basic Invitation',
-    filterGroup: 'Contoh Basic Invitation',
+    category: 'Basic Invitation',
+    filterGroup: 'Basic Invitation',
     description:
       'Contoh nyata website undangan digital paket Basic Invitation lengkap dengan sampul elegan, nama tamu undangan, tanggal acara, dan tautan subdomain aktif.',
-    image: '/src/assets/images/basic_invitation_naufal_amanda_1795520097626.jpg',
+    image: '/src/assets/images/basic_invitation_naufal_amanda_v2_1795521177636.jpg',
     isScreenshot: true,
-    demoUrl: 'https://adatjawa.digitalinvitation.biz.id/#mempelai',
+    demoUrl: 'https://basicinvitation.digitalinvitation.biz.id/',
     recommendedPackage: 'Basic Invitation',
     demoPreview: {
       coupleNames: 'Naufal & Amanda',
@@ -255,138 +256,6 @@ export const PORTFOLIO_ITEMS: PortfolioItem[] = [
       surfaceHex: '#FFFFFF',
       inkHex: '#0A0A0A',
       motifLabel: 'Basic Invitation',
-    },
-  },
-  {
-    id: 'demo-modern-minimalis',
-    title: 'Serene Ivory Arch',
-    category: 'Modern Minimalis',
-    filterGroup: 'Modern Minimalis',
-    description: 'Komposisi editorial bersih dengan tipografi serif lapang, palet ivory lembut, dan galeri simetris.',
-    image: '/src/assets/images/portfolio_modern_minimalis_1795512305658.jpg',
-    imagePosition: 'object-center',
-    demoUrl: '',
-    recommendedPackage: 'Standard Invitation',
-    demoPreview: {
-      coupleNames: 'Nadia & Pratama',
-      weddingDate: 'Sabtu, 12 Desember 2026',
-      venue: 'Glasshouse Courtyard, Kemang',
-      city: 'Jakarta Selatan',
-      quote: 'Dua langkah yang menyatu dalam ketenangan, membangun rumah dengan kasih dan rasa syukur.',
-      accentHex: '#0A0A0A',
-      surfaceHex: '#FFFFFF',
-      inkHex: '#0A0A0A',
-      motifLabel: 'Editorial Minimalis',
-    },
-  },
-  {
-    id: 'demo-adat-jawa',
-    title: 'Kraton Melati Heritage',
-    category: 'Adat Jawa',
-    filterGroup: 'Adat Nusantara',
-    description: 'Nuansa sakral keraton dengan ornamen ukiran halus, ronce melati, dan tata bahasa Jawa yang anggun.',
-    image: '/src/assets/images/portfolio_adat_jawa_sunda_1795512306064.jpg',
-    imagePosition: 'object-center',
-    demoUrl: '',
-    recommendedPackage: 'Standard Invitation',
-    demoPreview: {
-      coupleNames: 'Sekar & Bagaskara',
-      weddingDate: 'Minggu, 20 Desember 2026',
-      venue: 'Pendopo Agung Royal Heritage',
-      city: 'Yogyakarta',
-      quote: 'Mugi gusti paring berkah dhumateng kaluwarga enggal ingkang sakinah, mawaddah, warahmah.',
-      accentHex: '#0A0A0A',
-      surfaceHex: '#FAFAFA',
-      inkHex: '#0A0A0A',
-      motifLabel: 'Adat Jawa Klasik',
-    },
-  },
-  {
-    id: 'demo-adat-sunda',
-    title: 'Siger Parahyangan',
-    category: 'Adat Sunda',
-    filterGroup: 'Adat Nusantara',
-    description: 'Sentuhan keanggunan Sunda berpadu palet krem keemasan, aksen melati suci, dan alur acara yang hangat.',
-    image: '/src/assets/images/portfolio_adat_jawa_sunda_1795512306064.jpg',
-    imagePosition: 'object-left',
-    demoUrl: '',
-    recommendedPackage: 'Premium Invitation',
-    demoPreview: {
-      coupleNames: 'Kirana & Raka',
-      weddingDate: 'Sabtu, 09 Januari 2027',
-      venue: 'Bale Asri Bumi Sangkuriang',
-      city: 'Bandung',
-      quote: 'Mugia rumah tangga anu diwangun salawasna dipaparin katenangan, kabagjaan, sareng berkah.',
-      accentHex: '#0A0A0A',
-      surfaceHex: '#FFFFFF',
-      inkHex: '#0A0A0A',
-      motifLabel: 'Adat Sunda Anggun',
-    },
-  },
-  {
-    id: 'demo-adat-minang',
-    title: 'Bundo Kanduang Songket',
-    category: 'Adat Minang',
-    filterGroup: 'Adat Nusantara',
-    description: 'Kemewahan tenun songket keemasan dan siluet mahkota tradisional dalam balutan layout digital modern.',
-    image: '/src/assets/images/portfolio_adat_minang_1795512307074.jpg',
-    imagePosition: 'object-center',
-    demoUrl: '',
-    recommendedPackage: 'Premium Invitation',
-    demoPreview: {
-      coupleNames: 'Putri & Farhan',
-      weddingDate: 'Minggu, 24 Januari 2027',
-      venue: 'Ballroom Pagaruyung Grand',
-      city: 'Padang',
-      quote: 'Adat basandi syarak, syarak basandi Kitabullah. Menyatukan dua keluarga dalam kehormatan.',
-      accentHex: '#0A0A0A',
-      surfaceHex: '#FAFAFA',
-      inkHex: '#0A0A0A',
-      motifLabel: 'Warisan Minangkabau',
-    },
-  },
-  {
-    id: 'demo-elegant-luxury',
-    title: 'Champagne Atelier',
-    category: 'Elegant Luxury',
-    filterGroup: 'Luxury & Floral',
-    description: 'Terinspirasi kartu undangan kertas katun bersegel lilin emas dengan transisi halus dan kesan eksklusif.',
-    image: '/src/assets/images/about_editorial_craft_1795512305408.jpg',
-    imagePosition: 'object-center',
-    demoUrl: '',
-    recommendedPackage: 'Exclusive Invitation',
-    demoPreview: {
-      coupleNames: 'Clarissa & Mahendra',
-      weddingDate: 'Sabtu, 06 Februari 2027',
-      venue: 'The Grand Conservatory',
-      city: 'Jakarta Pusat',
-      quote: 'An intimate evening of timeless vows, candlelight, and cherished company.',
-      accentHex: '#0A0A0A',
-      surfaceHex: '#FFFFFF',
-      inkHex: '#0A0A0A',
-      motifLabel: 'Atelier Eksklusif',
-    },
-  },
-  {
-    id: 'demo-floral-romantic',
-    title: 'Garden Peony Twilight',
-    category: 'Floral Romantic',
-    filterGroup: 'Luxury & Floral',
-    description: 'Harmoni kelopak mawar krem, cahaya senja hangat, serta fitur galeri dan musik pengiring yang romantis.',
-    image: '/src/assets/images/portfolio_floral_luxury_1795512307223.jpg',
-    imagePosition: 'object-center',
-    demoUrl: '',
-    recommendedPackage: 'Standard Invitation',
-    demoPreview: {
-      coupleNames: 'Alyssa & Dimas',
-      weddingDate: 'Minggu, 14 Februari 2027',
-      venue: 'Taman Sinar Senja Estate',
-      city: 'Bali',
-      quote: 'Di bawah langit senja dan aroma bunga taman, kami mengikat janji untuk selamanya.',
-      accentHex: '#0A0A0A',
-      surfaceHex: '#FAFAFA',
-      inkHex: '#0A0A0A',
-      motifLabel: 'Floral Romantis',
     },
   },
 ];
