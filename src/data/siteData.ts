@@ -27,11 +27,19 @@ export interface PricingPackage {
 export interface PortfolioItem {
   id: string;
   title: string;
-  category: 'Modern Minimalis' | 'Adat Jawa' | 'Adat Sunda' | 'Adat Minang' | 'Elegant Luxury' | 'Floral Romantic';
-  filterGroup: 'Modern Minimalis' | 'Adat Nusantara' | 'Luxury & Floral';
+  category:
+    | 'Contoh Basic Invitation'
+    | 'Modern Minimalis'
+    | 'Adat Jawa'
+    | 'Adat Sunda'
+    | 'Adat Minang'
+    | 'Elegant Luxury'
+    | 'Floral Romantic';
+  filterGroup: 'Contoh Basic Invitation' | 'Modern Minimalis' | 'Adat Nusantara' | 'Luxury & Floral';
   description: string;
   image: string;
   imagePosition?: string;
+  isScreenshot?: boolean;
   demoUrl?: string; // Isi dengan URL undangan asli jika sudah tersedia
   recommendedPackage: string;
   demoPreview: {
@@ -226,6 +234,29 @@ export const PRICING_PACKAGES: PricingPackage[] = [
 ];
 
 export const PORTFOLIO_ITEMS: PortfolioItem[] = [
+  {
+    id: 'contoh-basic-invitation',
+    title: 'Naufal & Amanda — Basic Invitation',
+    category: 'Contoh Basic Invitation',
+    filterGroup: 'Contoh Basic Invitation',
+    description:
+      'Contoh nyata website undangan digital paket Basic Invitation lengkap dengan sampul elegan, nama tamu undangan, tanggal acara, dan tautan subdomain aktif.',
+    image: '/src/assets/images/basic_invitation_naufal_amanda_1795520097626.jpg',
+    isScreenshot: true,
+    demoUrl: 'https://adatjawa.digitalinvitation.biz.id/#mempelai',
+    recommendedPackage: 'Basic Invitation',
+    demoPreview: {
+      coupleNames: 'Naufal & Amanda',
+      weddingDate: 'Minggu, 20 Desember 2026',
+      venue: 'Lokasi Acara Pernikahan',
+      city: 'Adat Jawa',
+      quote: 'The Wedding Of Naufal & Amanda.',
+      accentHex: '#0A0A0A',
+      surfaceHex: '#FFFFFF',
+      inkHex: '#0A0A0A',
+      motifLabel: 'Basic Invitation',
+    },
+  },
   {
     id: 'demo-modern-minimalis',
     title: 'Serene Ivory Arch',
