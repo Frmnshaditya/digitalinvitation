@@ -8,13 +8,13 @@ export const BRAND_CONFIG = {
   year: 2026,
   contact: {
     // Gunakan format internasional tanpa tanda '+' atau spasi untuk tautan WhatsApp (contoh: 6281234567890)
-    whatsappNumber: '6285285538963',
-    whatsappDisplay: '+62 852-8553-8963',
-    instagramHandle: '@digitalinvitation.id',
-    instagramUrl: 'https://instagram.com/digitalinvitation.id',
-    tiktokHandle: '@digitalinvitation.id',
-    tiktokUrl: 'https://tiktok.com/@digitalinvitation.id',
-    email: 'halo@digitalinvitation.id',
+    whatsappNumber: '628138012580',
+    whatsappDisplay: '+62 813-8012-580',
+    instagramHandle: '@vowsss.id',
+    instagramUrl: 'https://www.instagram.com/vowsss.id?bqrl=M28yOW44YjBob3Qy',
+    tiktokHandle: '@vowsss.id',
+    tiktokUrl: 'https://www.tiktok.com/@vowsss.id?_r=1&_t=ZS-9BkbcmOvbqZ',
+    email: 'Vowsss.id@gmail.com',
     studioCity: 'Jakarta & Melayani Seluruh Indonesia',
   },
 } as const;
