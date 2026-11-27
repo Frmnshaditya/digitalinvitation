@@ -33,7 +33,7 @@ export function DemoPreviewModal({ item, onClose }: DemoPreviewModalProps) {
 
   const { demoPreview } = item;
   const whatsappOrderUrl = buildConsultationUrl(
-    `Halo ${BRAND_CONFIG.name}, saya tertarik memesan undangan pernikahan digital dengan tema "${item.title}" (${item.category}). Boleh saya konsultasikan detailnya?`
+    `Halo ${BRAND_CONFIG.name}, saya tertarik memesan undangan digital dengan tema "${item.title}" (${item.category}). Boleh saya konsultasikan detailnya?`
   );
 
   const handleDemoRsvp = (e: React.FormEvent) => {
@@ -173,8 +173,8 @@ export function DemoPreviewModal({ item, onClose }: DemoPreviewModalProps) {
                 </p>
                 <p className="text-sm text-[#525252] leading-relaxed">
                   Tampilan ini merupakan contoh simulasi desain tema <strong>{item.category}</strong>.
-                  Nama mempelai, foto, musik latar, serta susunan acara akan disesuaikan sepenuhnya
-                  dengan data pernikahanmu.
+                  Nama, foto, musik latar, serta susunan acara akan disesuaikan sepenuhnya
+                  dengan data acaramu.
                 </p>
               </div>
 

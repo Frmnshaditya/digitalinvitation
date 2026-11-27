@@ -20,7 +20,7 @@ export function FaqSection() {
             className="font-sans font-semibold text-[#0A0A0A] leading-tight tracking-tight mb-4"
             style={{ fontSize: 'clamp(1.75rem, 2.8vw, 2.5rem)', textWrap: 'balance' }}
           >
-            Hal yang Sering Ditanyakan Calon Pengantin
+            Hal yang Sering Ditanyakan Calon Customer
           </h2>
           <p className="text-base text-[#525252] leading-relaxed">
             Informasi ringkas seputar pemesanan, penyesuaian desain, fitur, hingga estimasi waktu

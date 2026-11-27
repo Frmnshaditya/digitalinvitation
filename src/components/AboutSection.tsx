@@ -20,7 +20,7 @@ export function AboutSection() {
               <div className="w-full h-[320px] sm:h-[400px] lg:h-full overflow-hidden rounded-md bg-[#E5E5E5]">
                 <EditorialImage
                   src={ABOUT_IMAGE}
-                  alt="Detail undangan pernikahan dengan pita sutra, segel lilin, dan bunga mawar putih"
+                  alt="Detail undangan digital dengan pita sutra, segel lilin, dan bunga mawar putih"
                   fallbackTitle="Keindahan Detail Undangan"
                   className="w-full h-full object-cover grayscale-[20%] contrast-[1.03]"
                 />
@@ -46,10 +46,10 @@ export function AboutSection() {
               Menyampaikan Kabar Bahagia dengan Cara yang Lebih Personal dan Berkesan
             </h2>
             <p className="text-base text-[#525252] leading-relaxed mb-8 max-w-2xl">
-              Kami percaya bahwa setiap pernikahan memiliki cerita yang istimewa. Melalui undangan
-              pernikahan digital, kami ingin membantu setiap pasangan menyampaikan kabar bahagia
-              dengan cara yang lebih praktis, menarik, dan berkesan — didukung beragam pilihan
-              desain dan fitur yang dapat disesuaikan.
+              Kami percaya bahwa setiap momen memiliki cerita yang istimewa. Melalui undangan
+              digital, kami ingin membantu menyampaikan kabar bahagia dan informasi acara dengan cara
+              yang lebih praktis, menarik, dan berkesan — didukung beragam pilihan desain dan fitur
+              yang dapat disesuaikan.
             </p>
 
             <div className="grid grid-cols-1 sm:grid-cols-2 gap-x-8 gap-y-6 pt-6 border-t border-[#E5E5E5]">

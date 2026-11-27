@@ -1,10 +1,11 @@
 import { useState } from 'react';
 import { ArrowUpRight, Instagram, Mail, MessageCircle, Music2 } from 'lucide-react';
 import { BRAND_CONFIG, buildConsultationUrl } from '../config/brand';
-import { PRICING_PACKAGES } from '../data/siteData';
+import { INVITATION_CATEGORIES, PRICING_PACKAGES } from '../data/siteData';
 
 export function ContactSection() {
   const [coupleName, setCoupleName] = useState('');
+  const [invitationType, setInvitationType] = useState(INVITATION_CATEGORIES[0].title);
   const [selectedPkgId, setSelectedPkgId] = useState('standard');
   const [themeNote, setThemeNote] = useState('Modern Minimalis');
 
@@ -13,15 +14,13 @@ export function ContactSection() {
 
   const consultWhatsappUrl = coupleName.trim()
     ? buildConsultationUrl(
-        `Halo ${BRAND_CONFIG.name}, saya ${coupleName.trim()}. Saya tertarik untuk memesan undangan pernikahan digital paket ${selectedPkg.name} dengan harga ${selectedPkg.price} (tema: ${themeNote}). Boleh saya mendapatkan informasi lebih lanjut?`
+        `Halo ${BRAND_CONFIG.name}, saya ${coupleName.trim()}. Saya tertarik untuk memesan ${invitationType} paket ${selectedPkg.name} dengan harga ${selectedPkg.price} (tema: ${themeNote}). Boleh saya mendapatkan informasi lebih lanjut?`
       )
     : buildConsultationUrl(
-        `Halo, saya tertarik untuk memesan undangan pernikahan digital paket ${selectedPkg.name} dengan harga ${selectedPkg.price} (tema: ${themeNote}). Boleh saya mendapatkan informasi lebih lanjut?`
+        `Halo, saya tertarik untuk memesan ${invitationType} paket ${selectedPkg.name} dengan harga ${selectedPkg.price} (tema: ${themeNote}). Boleh saya mendapatkan informasi lebih lanjut?`
       );
 
-  const directWhatsAppUrl = buildConsultationUrl(
-    `Halo ${BRAND_CONFIG.name}, saya ingin berkonsultasi tentang konsep undangan pernikahan impian kami.`
-  );
+  const directWhatsAppUrl = buildConsultationUrl();
 
   return (
     <section id="kontak" className="bg-[#F5F5F5] py-16 md:py-24 border-t border-[#E5E5E5]">
@@ -40,7 +39,7 @@ export function ContactSection() {
                 Punya Konsep Undangan Impian?
               </h2>
               <p className="text-base text-[#525252] leading-relaxed max-w-xl">
-                Ceritakan konsep dan kebutuhan undangan pernikahanmu kepada kami. Kami siap membantu
+                Ceritakan konsep dan kebutuhan undangan digitalmu kepada kami. Kami siap membantu
                 mewujudkannya menjadi undangan digital yang berkesan.
               </p>
             </div>
@@ -142,21 +141,44 @@ export function ContactSection() {
             </p>
 
             <div className="space-y-4">
-              <div>
-                <label
-                  htmlFor="consult-name"
-                  className="block text-sm font-medium text-[#0A0A0A] mb-1.5"
-                >
-                  Nama Pasangan / Pemesan
-                </label>
-                <input
-                  id="consult-name"
-                  type="text"
-                  value={coupleName}
-                  onChange={(e) => setCoupleName(e.target.value)}
-                  placeholder="Contoh: Rani & Dimas"
-                  className="w-full px-4 py-2.5 text-sm bg-white border border-[#D4D4D4] rounded-md text-[#0A0A0A] placeholder:text-[#737373] focus:outline-none focus:border-[#0A0A0A]"
-                />
+              <div className="grid grid-cols-1 sm:grid-cols-2 gap-4">
+                <div>
+                  <label
+                    htmlFor="consult-name"
+                    className="block text-sm font-medium text-[#0A0A0A] mb-1.5"
+                  >
+                    Nama Pemesan / Acara
+                  </label>
+                  <input
+                    id="consult-name"
+                    type="text"
+                    value={coupleName}
+                    onChange={(e) => setCoupleName(e.target.value)}
+                    placeholder="Contoh: Naufal & Amanda / Acara Ulang Tahun"
+                    className="w-full px-4 py-2.5 text-sm bg-white border border-[#D4D4D4] rounded-md text-[#0A0A0A] placeholder:text-[#737373] focus:outline-none focus:border-[#0A0A0A]"
+                  />
+                </div>
+
+                <div>
+                  <label
+                    htmlFor="consult-type"
+                    className="block text-sm font-medium text-[#0A0A0A] mb-1.5"
+                  >
+                    Jenis Undangan Digital
+                  </label>
+                  <select
+                    id="consult-type"
+                    value={invitationType}
+                    onChange={(e) => setInvitationType(e.target.value)}
+                    className="w-full px-4 py-2.5 text-sm bg-white border border-[#D4D4D4] rounded-md text-[#0A0A0A] focus:outline-none focus:border-[#0A0A0A]"
+                  >
+                    {INVITATION_CATEGORIES.map((cat) => (
+                      <option key={cat.id} value={cat.title}>
+                        {cat.title}
+                      </option>
+                    ))}
+                  </select>
+                </div>
               </div>
 
               <div className="grid grid-cols-1 sm:grid-cols-2 gap-4">

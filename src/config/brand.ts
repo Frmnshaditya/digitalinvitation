@@ -23,7 +23,7 @@ export const BRAND_CONFIG = {
  * Membuat tautan WhatsApp dengan pesan otomatis untuk pemesanan paket tertentu.
  */
 export function buildPackageOrderUrl(packageName: string, price: string): string {
-  const message = `Halo, saya tertarik untuk memesan undangan pernikahan digital paket ${packageName} dengan harga ${price}. Boleh saya mendapatkan informasi lebih lanjut?`;
+  const message = `Halo, saya tertarik untuk memesan undangan digital paket ${packageName} dengan harga ${price}. Boleh saya mendapatkan informasi lebih lanjut?`;
   return `https://wa.me/${BRAND_CONFIG.contact.whatsappNumber}?text=${encodeURIComponent(message)}`;
 }
 
@@ -31,6 +31,7 @@ export function buildPackageOrderUrl(packageName: string, price: string): string
  * Membuat tautan WhatsApp untuk konsultasi umum atau tema khusus.
  */
 export function buildConsultationUrl(customMessage?: string): string {
-  const defaultMessage = `Halo ${BRAND_CONFIG.name}, saya ingin berkonsultasi mengenai pembuatan undangan pernikahan digital. Boleh dibantu informasinya?`;
+  const defaultMessage =
+    'Halo VowsssDigital!\n\nSaya tertarik untuk menggunakan jasa pembuatan undangan digital. Boleh minta informasi mengenai pilihan desain, fitur yang tersedia, serta daftar harga paket undangannya?\n\nTerima kasih!';
   return `https://wa.me/${BRAND_CONFIG.contact.whatsappNumber}?text=${encodeURIComponent(customMessage || defaultMessage)}`;
 }

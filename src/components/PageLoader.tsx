@@ -38,7 +38,7 @@ export function PageLoader() {
         <BrandLogo variant="light" size="lg" />
         <div className="w-16 h-px bg-[#D4D4D4]" />
         <span className="text-xs tracking-widest uppercase text-[#525252]">
-          Undangan Pernikahan Digital
+          Undangan Digital
         </span>
       </div>
     </div>

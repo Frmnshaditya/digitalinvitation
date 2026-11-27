@@ -99,12 +99,57 @@ export const ABOUT_ADVANTAGES: { title: string; detail: string }[] = [
     detail: 'Dioptimalkan agar tampil rapi dan nyaman dibuka dari layar ponsel, tablet, maupun desktop.',
   },
   {
-    title: 'Pilihan desain sesuai tema pernikahan',
+    title: 'Pilihan desain sesuai tema acara',
     detail: 'Mendukung konsep modern minimalis, floral romantis, hingga sentuhan adat Jawa, Sunda, dan Minang.',
   },
   {
     title: 'Pelayanan dan konsultasi dengan pelanggan',
     detail: 'Pendampingan langsung dan komunikatif dari tahap pemilihan konsep hingga undangan siap dibagikan.',
+  },
+];
+
+export interface InvitationCategory {
+  id: string;
+  number: string;
+  title: string;
+  description: string;
+}
+
+export const INVITATION_CATEGORIES: InvitationCategory[] = [
+  {
+    id: 'undangan-pernikahan',
+    number: '01',
+    title: 'Undangan Pernikahan Digital',
+    description:
+      'Tampilan elegan dan personal dengan pilihan tema modern minimalis hingga adat Nusantara.',
+  },
+  {
+    id: 'undangan-birthday-party',
+    number: '02',
+    title: 'Undangan Birthday Party Digital',
+    description:
+      'Desain ceria dan modern untuk mengundang sahabat serta keluarga di momen ulang tahun.',
+  },
+  {
+    id: 'undangan-khitanan',
+    number: '03',
+    title: 'Undangan Khitanan Digital',
+    description:
+      'Informasi acara yang rapi, sopan, dan mudah diakses lengkap dengan peta lokasi dan waktu.',
+  },
+  {
+    id: 'undangan-aqiqah',
+    number: '04',
+    title: 'Undangan Aqiqah Digital',
+    description:
+      'Nuansa hangat dan penuh rasa syukur untuk berbagi kabar tasyakuran buah hati.',
+  },
+  {
+    id: 'undangan-aqiqah-khitanan',
+    number: '05',
+    title: 'Undangan Aqiqah dan Khitanan Digital',
+    description:
+      'Satu undangan digital terpadu untuk menyampaikan detail kedua acara secara praktis.',
   },
 ];
 
@@ -151,15 +196,15 @@ export const PRICING_PACKAGES: PricingPackage[] = [
     description: 'Undangan sederhana, praktis, dan tetap elegan.',
     domainNote: 'Domain .biz.id',
     benefits: [
-      'Informasi acara pernikahan',
-      'Nama kedua mempelai',
+      'Informasi detail acara',
+      'Nama penyelenggara / pemilik acara',
       'Tanggal dan lokasi acara',
       'Integrasi Google Maps',
-      'Countdown pernikahan',
+      'Countdown menuju hari H',
       'Link undangan yang dapat dibagikan',
       'Website menggunakan domain .biz.id',
       'Template desain yang telah disediakan',
-      'Pilihan tema atau adat pernikahan seperti Jawa, Sunda, Minang, Modern, dan lainnya',
+      'Pilihan tema modern maupun adat seperti Jawa, Sunda, Minang, dan lainnya',
       'Template disesuaikan dengan tema pilihan pelanggan',
     ],
   },
@@ -182,7 +227,7 @@ export const PRICING_PACKAGES: PricingPackage[] = [
       'Desain undangan lebih interaktif',
       'Website menggunakan domain .my.id',
       'Template desain yang telah disediakan',
-      'Pilihan tema atau adat pernikahan',
+      'Pilihan tema modern maupun adat',
       'Template disesuaikan dengan tema pilihan pelanggan',
     ],
   },
@@ -249,13 +294,36 @@ export const PORTFOLIO_ITEMS: PortfolioItem[] = [
     demoPreview: {
       coupleNames: 'Naufal & Amanda',
       weddingDate: 'Minggu, 20 Desember 2026',
-      venue: 'Lokasi Acara Pernikahan',
+      venue: 'Lokasi Acara',
       city: 'Adat Jawa',
       quote: 'The Wedding Of Naufal & Amanda.',
       accentHex: '#0A0A0A',
       surfaceHex: '#FFFFFF',
       inkHex: '#0A0A0A',
       motifLabel: 'Basic Invitation',
+    },
+  },
+  {
+    id: 'contoh-premium-invitation-1',
+    title: 'Putra & Putri — Premium Invitation',
+    category: 'Premium Invitation',
+    filterGroup: 'Premium Invitation',
+    description:
+      'Contoh nyata website undangan digital paket Premium Invitation bernuansa klasik maroon dan emas dengan bingkai elegan serta tautan website aktif.',
+    image: '/assets/aistudio/a254b4e7-d698-45d4-a4f6-499328462a14_208902e3.jpg',
+    isScreenshot: true,
+    demoUrl: 'https://premiumtamplate1.vowsss.com/',
+    recommendedPackage: 'Premium Invitation',
+    demoPreview: {
+      coupleNames: 'Putra & Putri',
+      weddingDate: 'Sabtu, 19 Desember 2026',
+      venue: 'Lokasi Acara',
+      city: 'Klasik Nusantara',
+      quote: 'The Wedding of Putra & Putri.',
+      accentHex: '#0A0A0A',
+      surfaceHex: '#FFFFFF',
+      inkHex: '#0A0A0A',
+      motifLabel: 'Premium Invitation',
     },
   },
 ];
@@ -301,14 +369,14 @@ export const ORDER_STEPS: OrderStep[] = [
 
 export const FAQ_ITEMS: FaqItem[] = [
   {
-    question: 'Apa itu undangan pernikahan digital?',
+    question: 'Apa itu undangan digital?',
     answer:
-      'Undangan pernikahan digital adalah undangan berbasis halaman website yang dirancang khusus untuk menyampaikan informasi pernikahan secara elegan, praktis, dan interaktif. Tamu dapat melihat detail acara, peta lokasi, galeri foto, hingga mengirim ucapan langsung dari ponsel mereka.',
+      'Undangan digital adalah undangan berbasis halaman website yang dirancang khusus untuk menyampaikan informasi acara secara elegan, praktis, dan interaktif. Tamu dapat melihat detail acara, peta lokasi, galeri foto, hingga mengirim ucapan langsung dari ponsel mereka.',
   },
   {
     question: 'Bagaimana cara memesan undangan?',
     answer:
-      'Anda cukup memilih paket yang diinginkan pada bagian Pricelist lalu menekan tombol "Pesan Paket Ini". Anda akan diarahkan langsung ke WhatsApp admin kami dengan pesan otomatis, kemudian kami akan memandu pengiriman data mempelai dan detail acara.',
+      'Anda cukup memilih paket yang diinginkan pada bagian Pricelist lalu menekan tombol "Pesan Paket Ini". Anda akan diarahkan langsung ke WhatsApp admin kami dengan pesan otomatis, kemudian kami akan memandu pengiriman data serta detail acara.',
   },
   {
     question: 'Apakah undangan bisa dibuka melalui HP?',
@@ -321,7 +389,7 @@ export const FAQ_ITEMS: FaqItem[] = [
       'Tentu bisa. Setelah selesai, Anda akan mendapatkan tautan (link) undangan khusus yang sangat mudah disalin dan dibagikan melalui WhatsApp, Instagram, maupun media pesan lainnya kepada seluruh daftar tamu.',
   },
   {
-    question: 'Apakah desain bisa disesuaikan dengan tema pernikahan?',
+    question: 'Apakah desain bisa disesuaikan dengan tema acara?',
     answer:
       'Bisa. Kami menyediakan pilihan tema mulai dari Modern Minimalis, Floral Romantic, Elegant Luxury, hingga tema adat seperti Jawa, Sunda, Minang, dan lainnya. Untuk paket Premium dan Exclusive, warna, font, elemen visual, hingga tata letak dapat dirancang khusus sesuai konsep acara Anda.',
   },

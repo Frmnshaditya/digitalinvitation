@@ -1,6 +1,6 @@
 import { useEffect, useState } from 'react';
 import { MessageCircle } from 'lucide-react';
-import { BRAND_CONFIG, buildConsultationUrl } from '../config/brand';
+import { buildConsultationUrl } from '../config/brand';
 
 export function scrollToTop() {
   window.scrollTo({ top: 0, behavior: 'smooth' });
@@ -20,9 +20,7 @@ export function FloatingActions() {
 
   void showBackToTop;
 
-  const whatsappUrl = buildConsultationUrl(
-    `Halo ${BRAND_CONFIG.name}, saya ingin bertanya mengenai jasa pembuatan undangan pernikahan digital.`
-  );
+  const whatsappUrl = buildConsultationUrl();
 
   return (
     <div className="fixed bottom-4 right-4 sm:bottom-6 sm:right-6 z-40 flex items-center gap-2.5">

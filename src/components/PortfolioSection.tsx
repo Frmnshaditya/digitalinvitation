@@ -88,6 +88,18 @@ export function PortfolioSection() {
                 <ExternalLink className="w-3.5 h-3.5" />
               </a>
             )}
+
+            {activeFilter === 'Premium Invitation' && (
+              <a
+                href="https://premiumtamplate1.vowsss.com/"
+                target="_blank"
+                rel="noopener noreferrer"
+                className="inline-flex items-center gap-2 px-4 py-2 text-xs sm:text-sm font-medium text-[#0A0A0A] bg-[#F5F5F5] hover:bg-[#5BE2E7] hover:border-[#5BE2E7] border border-[#D4D4D4] rounded-md transition-colors whitespace-nowrap shrink-0"
+              >
+                <span>Buka Website Contoh</span>
+                <ExternalLink className="w-3.5 h-3.5" />
+              </a>
+            )}
           </div>
         </div>
 
@@ -135,7 +147,7 @@ export function PortfolioSection() {
                 <div className="relative aspect-[4/3] overflow-hidden bg-[#F5F5F5] border-b border-[#E5E5E5]">
                   <EditorialImage
                     src={item.image}
-                    alt={`Contoh desain undangan pernikahan tema ${item.category} - ${item.title}`}
+                    alt={`Contoh desain undangan digital tema ${item.category} - ${item.title}`}
                     fallbackTitle={item.title}
                     className={`w-full h-full object-cover grayscale-[20%] contrast-[1.03] ${
                       item.imagePosition || 'object-center'

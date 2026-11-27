@@ -1,6 +1,6 @@
 import { useState, useEffect } from 'react';
 import { Menu, X } from 'lucide-react';
-import { BRAND_CONFIG, buildConsultationUrl } from '../config/brand';
+import { buildConsultationUrl } from '../config/brand';
 import { NAV_ITEMS } from '../data/siteData';
 import { BrandLogo } from './BrandLogo';
 
@@ -31,9 +31,7 @@ export function Navbar() {
     setMobileOpen(false);
   };
 
-  const whatsappOrderHref = buildConsultationUrl(
-    `Halo ${BRAND_CONFIG.name}, saya ingin memesan undangan pernikahan digital. Boleh dibantu informasi dan pilihannya?`
-  );
+  const whatsappOrderHref = buildConsultationUrl();
 
   return (
     <header

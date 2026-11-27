@@ -12,9 +12,7 @@ const HERO_TRUST_POINTS = [
 ];
 
 export function HeroSection() {
-  const consultationHref = buildConsultationUrl(
-    `Halo ${BRAND_CONFIG.name}, saya ingin konsultasi mengenai pembuatan undangan pernikahan digital.`
-  );
+  const consultationHref = buildConsultationUrl();
 
   return (
     <section id="beranda" className="bg-white pt-8 pb-12 md:pt-12 md:pb-16 lg:pt-16 lg:pb-20">
@@ -40,7 +38,7 @@ export function HeroSection() {
             </h1>
 
             <p className="text-base sm:text-lg text-[#525252] leading-relaxed max-w-xl mb-8">
-              Hadirkan undangan pernikahan yang indah, personal, dan mudah dibagikan. Kami membantu
+              Hadirkan undangan digital yang indah, personal, dan mudah dibagikan. Kami membantu
               mewujudkan undangan digital sesuai cerita dan keinginanmu.
             </p>
 
@@ -76,8 +74,8 @@ export function HeroSection() {
               <div className="relative w-full h-[380px] sm:h-[460px] lg:h-full lg:min-h-[500px] overflow-hidden rounded-md bg-[#F5F5F5]">
                 <EditorialImage
                   src={HERO_IMAGE}
-                  alt="Pasangan pengantin dalam balutan busana pernikahan adat bernuansa elegan dan romantis"
-                  fallbackTitle="Undangan Pernikahan Digital"
+                  alt="Potret elegan dalam balutan busana adat bernuansa klasik dan romantis"
+                  fallbackTitle="Undangan Digital"
                   priority
                   className="w-full h-full object-cover object-top"
                 />

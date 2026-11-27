@@ -16,8 +16,8 @@ export function Footer() {
               <BrandLogo variant="dark" size="lg" />
             </a>
             <p className="text-sm text-[#A3A3A3] leading-relaxed max-w-sm">
-              Jasa pembuatan undangan pernikahan digital yang elegan, personal, dan praktis dibagikan.
-              Membantu mengabadikan kisah istimewa setiap pasangan dalam tampilan berkelas.
+              Jasa pembuatan undangan digital yang elegan, personal, dan praktis dibagikan.
+              Membantu mengabadikan setiap momen istimewa dalam tampilan berkelas.
             </p>
             <p className="text-xs text-[#D4D4D4]">{BRAND_CONFIG.contact.studioCity}</p>
           </div>
