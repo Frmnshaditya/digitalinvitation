@@ -67,8 +67,8 @@ export function PortfolioSection() {
                     onClick={() => setActiveFilter(group)}
                     className={`px-3.5 py-2 text-xs sm:text-sm font-medium rounded-md transition-colors duration-150 whitespace-nowrap shrink-0 focus-visible:outline-2 focus-visible:outline-[#0A0A0A] ${
                       isActive
-                        ? 'bg-[#0A0A0A] text-white'
-                        : 'text-[#525252] hover:text-[#0A0A0A] hover:bg-white'
+                        ? 'bg-[#5BE2E7] text-[#0A0A0A]'
+                        : 'text-[#525252] hover:text-[#0A0A0A] hover:bg-[#5BE2E7]'
                     }`}
                   >
                     {group}
@@ -82,7 +82,7 @@ export function PortfolioSection() {
                 href="https://basicinvitation.digitalinvitation.biz.id/"
                 target="_blank"
                 rel="noopener noreferrer"
-                className="inline-flex items-center gap-2 px-4 py-2 text-xs sm:text-sm font-medium text-[#0A0A0A] bg-[#F5F5F5] hover:bg-[#E5E5E5] border border-[#D4D4D4] rounded-md transition-colors whitespace-nowrap shrink-0"
+                className="inline-flex items-center gap-2 px-4 py-2 text-xs sm:text-sm font-medium text-[#0A0A0A] bg-[#F5F5F5] hover:bg-[#5BE2E7] hover:border-[#5BE2E7] border border-[#D4D4D4] rounded-md transition-colors whitespace-nowrap shrink-0"
               >
                 <span>Buka Website Contoh</span>
                 <ExternalLink className="w-3.5 h-3.5" />
@@ -107,13 +107,13 @@ export function PortfolioSection() {
               <button
                 type="button"
                 onClick={() => setActiveFilter('Semua')}
-                className="px-4 py-2 text-xs sm:text-sm font-medium text-white bg-[#0A0A0A] hover:bg-[#262626] rounded-md transition-colors"
+                className="px-4 py-2 text-xs sm:text-sm font-medium text-[#0A0A0A] bg-[#5BE2E7] hover:bg-[#43CFD5] rounded-md transition-colors"
               >
                 Lihat Semua
               </button>
               <a
                 href="#pricelist"
-                className="px-4 py-2 text-xs sm:text-sm font-medium text-[#0A0A0A] bg-white hover:bg-[#F5F5F5] border border-[#D4D4D4] rounded-md transition-colors"
+                className="px-4 py-2 text-xs sm:text-sm font-medium text-[#0A0A0A] bg-white hover:bg-[#5BE2E7] hover:border-[#5BE2E7] border border-[#D4D4D4] rounded-md transition-colors"
               >
                 Lihat Detail Paket
               </a>
@@ -165,7 +165,7 @@ export function PortfolioSection() {
                   whileInView={{ opacity: 1, y: 0 }}
                   viewport={{ once: true, amount: 0.12 }}
                   transition={{ duration: 0.45, delay: index * 0.05, ease: [0.16, 1, 0.3, 1] }}
-                  className="group flex flex-col justify-between bg-white border border-[#E5E5E5] rounded-lg overflow-hidden hover:border-[#0A0A0A] transition-colors duration-200"
+                  className="group flex flex-col justify-between bg-white border border-[#E5E5E5] rounded-lg overflow-hidden hover:border-[#5BE2E7] transition-colors duration-200"
                 >
                   <div>
                     {/* Preview Image (clickable to demoUrl when available) */}
@@ -206,7 +206,7 @@ export function PortfolioSection() {
                         href={item.demoUrl}
                         target="_blank"
                         rel="noopener noreferrer"
-                        className="w-full inline-flex items-center justify-center gap-2 px-5 py-2.5 text-sm font-medium text-[#0A0A0A] bg-[#F5F5F5] hover:bg-[#E5E5E5] border border-[#D4D4D4] rounded-md transition-colors duration-150 whitespace-nowrap"
+                        className="w-full inline-flex items-center justify-center gap-2 px-5 py-2.5 text-sm font-medium text-[#0A0A0A] bg-[#F5F5F5] hover:bg-[#5BE2E7] hover:border-[#5BE2E7] border border-[#D4D4D4] rounded-md transition-colors duration-150 whitespace-nowrap"
                       >
                         <ExternalLink className="w-4 h-4 text-[#0A0A0A]" />
                         <span>Lihat</span>
@@ -215,7 +215,7 @@ export function PortfolioSection() {
                       <button
                         type="button"
                         onClick={() => setSelectedDemo(item)}
-                        className="w-full inline-flex items-center justify-center gap-2 px-5 py-2.5 text-sm font-medium text-[#0A0A0A] bg-[#F5F5F5] hover:bg-[#E5E5E5] border border-[#D4D4D4] rounded-md transition-colors duration-150 whitespace-nowrap focus-visible:outline-2 focus-visible:outline-[#0A0A0A]"
+                        className="w-full inline-flex items-center justify-center gap-2 px-5 py-2.5 text-sm font-medium text-[#0A0A0A] bg-[#F5F5F5] hover:bg-[#5BE2E7] hover:border-[#5BE2E7] border border-[#D4D4D4] rounded-md transition-colors duration-150 whitespace-nowrap focus-visible:outline-2 focus-visible:outline-[#0A0A0A]"
                       >
                         <Eye className="w-4 h-4 text-[#0A0A0A]" />
                         <span>Lihat</span>

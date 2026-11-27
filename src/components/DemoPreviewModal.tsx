@@ -69,7 +69,7 @@ export function DemoPreviewModal({ item, onClose }: DemoPreviewModalProps) {
             type="button"
             onClick={onClose}
             aria-label="Tutup pratinjau demo"
-            className="inline-flex items-center justify-center min-w-[40px] min-h-[40px] rounded-md text-[#525252] hover:text-[#0A0A0A] hover:bg-[#F5F5F5] transition-colors focus-visible:outline-2 focus-visible:outline-[#0A0A0A]"
+            className="inline-flex items-center justify-center min-w-[40px] min-h-[40px] rounded-md text-[#525252] hover:text-[#0A0A0A] hover:bg-[#5BE2E7] transition-colors focus-visible:outline-2 focus-visible:outline-[#0A0A0A]"
           >
             <X className="w-5 h-5" />
           </button>
@@ -154,7 +154,7 @@ export function DemoPreviewModal({ item, onClose }: DemoPreviewModalProps) {
                     </select>
                     <button
                       type="submit"
-                      className="px-4 py-2 text-sm font-medium text-white bg-[#0A0A0A] hover:bg-[#262626] rounded-md transition-colors whitespace-nowrap"
+                      className="px-4 py-2 text-sm font-medium text-[#0A0A0A] bg-[#5BE2E7] hover:bg-[#43CFD5] rounded-md transition-colors whitespace-nowrap"
                     >
                       Coba Kirim
                     </button>
@@ -194,7 +194,7 @@ export function DemoPreviewModal({ item, onClose }: DemoPreviewModalProps) {
                 href={whatsappOrderUrl}
                 target="_blank"
                 rel="noopener noreferrer"
-                className="w-full inline-flex items-center justify-center gap-2 px-5 py-3 text-sm font-medium text-white bg-[#0A0A0A] hover:bg-[#262626] rounded-md transition-colors"
+                className="w-full inline-flex items-center justify-center gap-2 px-5 py-3 text-sm font-medium text-[#0A0A0A] bg-[#5BE2E7] hover:bg-[#43CFD5] rounded-md transition-colors"
               >
                 <MessageCircle className="w-4 h-4" />
                 <span>Pesan Tema Ini via WhatsApp</span>
@@ -205,7 +205,7 @@ export function DemoPreviewModal({ item, onClose }: DemoPreviewModalProps) {
                   href={item.demoUrl}
                   target="_blank"
                   rel="noopener noreferrer"
-                  className="w-full inline-flex items-center justify-center gap-2 px-5 py-3 text-sm font-medium text-[#0A0A0A] bg-[#F5F5F5] border border-[#D4D4D4] hover:bg-[#E5E5E5] rounded-md transition-colors"
+                  className="w-full inline-flex items-center justify-center gap-2 px-5 py-3 text-sm font-medium text-[#0A0A0A] bg-[#F5F5F5] border border-[#D4D4D4] hover:bg-[#5BE2E7] hover:border-[#5BE2E7] rounded-md transition-colors"
                 >
                   <span>Buka Tautan Demo Penuh</span>
                   <ExternalLink className="w-4 h-4" />
@@ -214,7 +214,7 @@ export function DemoPreviewModal({ item, onClose }: DemoPreviewModalProps) {
                 <button
                   type="button"
                   onClick={onClose}
-                  className="w-full inline-flex items-center justify-center px-5 py-3 text-sm font-medium text-[#525252] hover:text-[#0A0A0A] bg-transparent border border-[#E5E5E5] hover:bg-[#F5F5F5] rounded-md transition-colors"
+                  className="w-full inline-flex items-center justify-center px-5 py-3 text-sm font-medium text-[#525252] hover:text-[#0A0A0A] bg-transparent border border-[#E5E5E5] hover:bg-[#5BE2E7] hover:border-[#5BE2E7] rounded-md transition-colors"
                 >
                   Kembali ke Galeri Portofolio
                 </button>

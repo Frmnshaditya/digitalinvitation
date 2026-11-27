@@ -44,7 +44,7 @@ export function FaqSection() {
                   onClick={() => toggleIndex(idx)}
                   className="w-full py-5 flex items-center justify-between gap-6 text-left group focus-visible:outline-2 focus-visible:outline-[#0A0A0A] rounded-sm"
                 >
-                  <span className="font-sans text-base sm:text-lg font-medium text-[#0A0A0A] group-hover:text-[#525252] transition-colors">
+                  <span className="font-sans text-base sm:text-lg font-medium text-[#0A0A0A] group-hover:text-[#5BE2E7] transition-colors">
                     {item.question}
                   </span>
                   <ChevronDown

@@ -47,7 +47,7 @@ export function HeroSection() {
             <div className="flex flex-wrap items-center gap-4">
               <a
                 href="#pricelist"
-                className="inline-flex items-center justify-center gap-2.5 px-7 py-3.5 text-sm sm:text-base font-medium text-white bg-[#0A0A0A] hover:bg-[#262626] rounded-md transition-colors duration-150 whitespace-nowrap shrink-0 focus-visible:outline-2 focus-visible:outline-offset-2 focus-visible:outline-[#0A0A0A]"
+                className="inline-flex items-center justify-center gap-2.5 px-7 py-3.5 text-sm sm:text-base font-medium text-[#0A0A0A] bg-[#5BE2E7] hover:bg-[#43CFD5] rounded-md transition-colors duration-150 whitespace-nowrap shrink-0 focus-visible:outline-2 focus-visible:outline-offset-2 focus-visible:outline-[#0A0A0A]"
               >
                 <span>Lihat Pricelist</span>
                 <ArrowRight className="w-4 h-4" />
@@ -57,7 +57,7 @@ export function HeroSection() {
                 href={consultationHref}
                 target="_blank"
                 rel="noopener noreferrer"
-                className="inline-flex items-center justify-center gap-2.5 px-7 py-3.5 text-sm sm:text-base font-medium text-[#0A0A0A] bg-white border border-[#D4D4D4] hover:border-[#0A0A0A] hover:bg-[#F5F5F5] rounded-md transition-colors duration-150 whitespace-nowrap shrink-0 focus-visible:outline-2 focus-visible:outline-offset-2 focus-visible:outline-[#0A0A0A]"
+                className="inline-flex items-center justify-center gap-2.5 px-7 py-3.5 text-sm sm:text-base font-medium text-[#0A0A0A] bg-white border border-[#D4D4D4] hover:border-[#5BE2E7] hover:bg-[#5BE2E7] rounded-md transition-colors duration-150 whitespace-nowrap shrink-0 focus-visible:outline-2 focus-visible:outline-offset-2 focus-visible:outline-[#0A0A0A]"
               >
                 <MessageCircle className="w-4 h-4 text-[#0A0A0A]" />
                 <span>Konsultasi Sekarang</span>

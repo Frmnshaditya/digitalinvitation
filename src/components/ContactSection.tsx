@@ -50,7 +50,7 @@ export function ContactSection() {
                 href={directWhatsAppUrl}
                 target="_blank"
                 rel="noopener noreferrer"
-                className="inline-flex items-center justify-center gap-2.5 px-7 py-3.5 text-sm sm:text-base font-medium text-white bg-[#0A0A0A] hover:bg-[#262626] rounded-md transition-colors duration-150 whitespace-nowrap focus-visible:outline-2 focus-visible:outline-[#0A0A0A]"
+                className="inline-flex items-center justify-center gap-2.5 px-7 py-3.5 text-sm sm:text-base font-medium text-[#0A0A0A] bg-[#5BE2E7] hover:bg-[#43CFD5] rounded-md transition-colors duration-150 whitespace-nowrap focus-visible:outline-2 focus-visible:outline-[#0A0A0A]"
               >
                 <MessageCircle className="w-4 h-4" />
                 <span>Hubungi via WhatsApp</span>
@@ -63,7 +63,7 @@ export function ContactSection() {
                 href={directWhatsAppUrl}
                 target="_blank"
                 rel="noopener noreferrer"
-                className="p-4 bg-white border border-[#E5E5E5] hover:border-[#0A0A0A] rounded-lg flex items-center justify-between gap-3 transition-colors group"
+                className="p-4 bg-white border border-[#E5E5E5] hover:border-[#5BE2E7] rounded-lg flex items-center justify-between gap-3 transition-colors group"
               >
                 <div className="flex items-center gap-3 min-w-0">
                   <MessageCircle className="w-5 h-5 text-[#0A0A0A] shrink-0" />
@@ -74,14 +74,14 @@ export function ContactSection() {
                     </p>
                   </div>
                 </div>
-                <ArrowUpRight className="w-4 h-4 text-[#0A0A0A] opacity-60 group-hover:opacity-100 shrink-0" />
+                <ArrowUpRight className="w-4 h-4 text-[#0A0A0A] group-hover:text-[#5BE2E7] opacity-60 group-hover:opacity-100 transition-colors shrink-0" />
               </a>
 
               <a
                 href={BRAND_CONFIG.contact.instagramUrl}
                 target="_blank"
                 rel="noopener noreferrer"
-                className="p-4 bg-white border border-[#E5E5E5] hover:border-[#0A0A0A] rounded-lg flex items-center justify-between gap-3 transition-colors group"
+                className="p-4 bg-white border border-[#E5E5E5] hover:border-[#5BE2E7] rounded-lg flex items-center justify-between gap-3 transition-colors group"
               >
                 <div className="flex items-center gap-3 min-w-0">
                   <Instagram className="w-5 h-5 text-[#0A0A0A] shrink-0" />
@@ -92,14 +92,14 @@ export function ContactSection() {
                     </p>
                   </div>
                 </div>
-                <ArrowUpRight className="w-4 h-4 text-[#0A0A0A] opacity-60 group-hover:opacity-100 shrink-0" />
+                <ArrowUpRight className="w-4 h-4 text-[#0A0A0A] group-hover:text-[#5BE2E7] opacity-60 group-hover:opacity-100 transition-colors shrink-0" />
               </a>
 
               <a
                 href={BRAND_CONFIG.contact.tiktokUrl}
                 target="_blank"
                 rel="noopener noreferrer"
-                className="p-4 bg-white border border-[#E5E5E5] hover:border-[#0A0A0A] rounded-lg flex items-center justify-between gap-3 transition-colors group"
+                className="p-4 bg-white border border-[#E5E5E5] hover:border-[#5BE2E7] rounded-lg flex items-center justify-between gap-3 transition-colors group"
               >
                 <div className="flex items-center gap-3 min-w-0">
                   <Music2 className="w-5 h-5 text-[#0A0A0A] shrink-0" />
@@ -110,12 +110,12 @@ export function ContactSection() {
                     </p>
                   </div>
                 </div>
-                <ArrowUpRight className="w-4 h-4 text-[#0A0A0A] opacity-60 group-hover:opacity-100 shrink-0" />
+                <ArrowUpRight className="w-4 h-4 text-[#0A0A0A] group-hover:text-[#5BE2E7] opacity-60 group-hover:opacity-100 transition-colors shrink-0" />
               </a>
 
               <a
                 href={`mailto:${BRAND_CONFIG.contact.email}`}
-                className="p-4 bg-white border border-[#E5E5E5] hover:border-[#0A0A0A] rounded-lg flex items-center justify-between gap-3 transition-colors group"
+                className="p-4 bg-white border border-[#E5E5E5] hover:border-[#5BE2E7] rounded-lg flex items-center justify-between gap-3 transition-colors group"
               >
                 <div className="flex items-center gap-3 min-w-0">
                   <Mail className="w-5 h-5 text-[#0A0A0A] shrink-0" />
@@ -126,7 +126,7 @@ export function ContactSection() {
                     </p>
                   </div>
                 </div>
-                <ArrowUpRight className="w-4 h-4 text-[#0A0A0A] opacity-60 group-hover:opacity-100 shrink-0" />
+                <ArrowUpRight className="w-4 h-4 text-[#0A0A0A] group-hover:text-[#5BE2E7] opacity-60 group-hover:opacity-100 transition-colors shrink-0" />
               </a>
             </div>
           </div>
@@ -210,7 +210,7 @@ export function ContactSection() {
                   href={consultWhatsappUrl}
                   target="_blank"
                   rel="noopener noreferrer"
-                  className="w-full inline-flex items-center justify-center gap-2 px-6 py-3.5 text-sm font-medium text-white bg-[#0A0A0A] hover:bg-[#262626] rounded-md transition-colors duration-150 focus-visible:outline-2 focus-visible:outline-offset-2 focus-visible:outline-[#0A0A0A]"
+                  className="w-full inline-flex items-center justify-center gap-2 px-6 py-3.5 text-sm font-medium text-[#0A0A0A] bg-[#5BE2E7] hover:bg-[#43CFD5] rounded-md transition-colors duration-150 focus-visible:outline-2 focus-visible:outline-offset-2 focus-visible:outline-[#0A0A0A]"
                 >
                   <MessageCircle className="w-4 h-4" />
                   <span>Kirim Konsultasi via WhatsApp</span>

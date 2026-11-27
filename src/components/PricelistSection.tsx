@@ -125,8 +125,8 @@ export function PricelistSection({ highlightedPackageId }: PricelistSectionProps
                     rel="noopener noreferrer"
                     className={`w-full inline-flex items-center justify-center gap-2 px-5 py-3.5 text-sm font-medium rounded-md transition-colors duration-150 whitespace-nowrap focus-visible:outline-2 focus-visible:outline-offset-2 focus-visible:outline-[#0A0A0A] ${
                       isFeatured || isExclusive
-                        ? 'bg-[#0A0A0A] text-white hover:bg-[#262626]'
-                        : 'bg-[#F5F5F5] text-[#0A0A0A] border border-[#D4D4D4] hover:bg-[#E5E5E5] hover:border-[#0A0A0A]'
+                        ? 'bg-[#5BE2E7] text-[#0A0A0A] hover:bg-[#43CFD5]'
+                        : 'bg-[#F5F5F5] text-[#0A0A0A] border border-[#D4D4D4] hover:bg-[#5BE2E7] hover:border-[#5BE2E7]'
                     }`}
                   >
                     <MessageCircle className="w-4 h-4 shrink-0" />

@@ -44,7 +44,7 @@ export function ServicesSection({ onSelectPackage }: ServicesSectionProps) {
               whileInView={{ opacity: 1, y: 0 }}
               viewport={{ once: true, amount: 0.15 }}
               transition={{ duration: 0.45, delay: index * 0.06, ease: [0.16, 1, 0.3, 1] }}
-              className="flex flex-col justify-between p-6 sm:p-7 bg-white border border-[#E5E5E5] rounded-lg hover:border-[#0A0A0A] transition-colors duration-200"
+              className="flex flex-col justify-between p-6 sm:p-7 bg-white border border-[#E5E5E5] rounded-lg hover:border-[#5BE2E7] transition-colors duration-200"
             >
               <div>
                 <span className="font-mono text-sm font-medium text-[#737373] tabular-nums block mb-4">
@@ -63,7 +63,7 @@ export function ServicesSection({ onSelectPackage }: ServicesSectionProps) {
                 <button
                   type="button"
                   onClick={() => handleDetailClick(service.packageId)}
-                  className="inline-flex items-center justify-between w-full px-4 py-2.5 text-sm font-medium text-[#0A0A0A] bg-[#F5F5F5] hover:bg-[#E5E5E5] rounded-md transition-colors duration-150 whitespace-nowrap focus-visible:outline-2 focus-visible:outline-[#0A0A0A]"
+                  className="inline-flex items-center justify-between w-full px-4 py-2.5 text-sm font-medium text-[#0A0A0A] bg-[#F5F5F5] hover:bg-[#5BE2E7] rounded-md transition-colors duration-150 whitespace-nowrap focus-visible:outline-2 focus-visible:outline-[#0A0A0A]"
                 >
                   <span>Lihat Detail Paket</span>
                   <ArrowDownRight className="w-4 h-4 text-[#0A0A0A]" />

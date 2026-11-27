@@ -32,7 +32,7 @@ export function Footer() {
                 <li key={item.href}>
                   <a
                     href={item.href}
-                    className="text-[#A3A3A3] hover:text-white transition-colors"
+                    className="text-[#A3A3A3] hover:text-[#5BE2E7] transition-colors"
                   >
                     {item.label}
                   </a>
@@ -52,7 +52,7 @@ export function Footer() {
                   href={whatsappUrl}
                   target="_blank"
                   rel="noopener noreferrer"
-                  className="inline-flex items-center gap-2.5 hover:text-white transition-colors"
+                  className="inline-flex items-center gap-2.5 hover:text-[#5BE2E7] transition-colors"
                 >
                   <MessageCircle className="w-4 h-4 text-white shrink-0" />
                   <span className="tabular-nums">{BRAND_CONFIG.contact.whatsappDisplay}</span>
@@ -61,7 +61,7 @@ export function Footer() {
               <li>
                 <a
                   href={`mailto:${BRAND_CONFIG.contact.email}`}
-                  className="inline-flex items-center gap-2.5 hover:text-white transition-colors"
+                  className="inline-flex items-center gap-2.5 hover:text-[#5BE2E7] transition-colors"
                 >
                   <Mail className="w-4 h-4 text-white shrink-0" />
                   <span>{BRAND_CONFIG.contact.email}</span>
@@ -72,7 +72,7 @@ export function Footer() {
                   href={BRAND_CONFIG.contact.instagramUrl}
                   target="_blank"
                   rel="noopener noreferrer"
-                  className="inline-flex items-center gap-2.5 hover:text-white transition-colors"
+                  className="inline-flex items-center gap-2.5 hover:text-[#5BE2E7] transition-colors"
                 >
                   <Instagram className="w-4 h-4 text-white shrink-0" />
                   <span>Instagram: {BRAND_CONFIG.contact.instagramHandle}</span>
@@ -83,7 +83,7 @@ export function Footer() {
                   href={BRAND_CONFIG.contact.tiktokUrl}
                   target="_blank"
                   rel="noopener noreferrer"
-                  className="inline-flex items-center gap-2.5 hover:text-white transition-colors"
+                  className="inline-flex items-center gap-2.5 hover:text-[#5BE2E7] transition-colors"
                 >
                   <Music2 className="w-4 h-4 text-white shrink-0" />
                   <span>TikTok: {BRAND_CONFIG.contact.tiktokHandle}</span>
